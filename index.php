@@ -1,4 +1,7 @@
 <?php
+$pageTitle = "CC Pardawala | Premium Handcrafted Curtains, Modern Blinds & Luxury Home Furnishings";
+$pageDescription = "Discover bespoke made-to-measure curtains, motorized & Roman blinds, luxury sofa upholstery fabrics, wallpapers, and mattresses at CC Pardawala across Gujarat and globally for NRIs.";
+$pageKeywords = "CC Pardawala, curtains Gujarat, luxury drapes, motorized blinds, roller blinds, sofa fabrics, home decor Vadodara, curtains Rajkot, NRI curtain styling";
 $activePage = 'home';
 include 'header.php';
 ?>
@@ -219,70 +222,64 @@ include 'header.php';
          ========================================== -->
     <section id="process" class="how-we-work-section">
         <div class="container">
-            <div class="row">
-                <!-- Left Side: Vertical Header -->
-                <div class="col-lg-3 process-header-col">
-                    <div class="process-vertical-header reveal">
-                        <span class="process-vertical-sub">How We Work</span>
-                        <h2 class="process-vertical-title">Proven Process<br>For Excellence</h2>
+            <!-- Centered Header -->
+            <div class="process-header-center text-center reveal">
+                <span class="hero-badge" style="color: var(--accent-gold); background-color: rgba(197, 168, 128, 0.15); margin-bottom: 16px; display: inline-block;">How We Work</span>
+                <h2 class="process-title-center">Proven Process For Excellence</h2>
+            </div>
+            
+            <!-- 4 Step Cards Grid -->
+            <div class="process-cards-row">
+                <!-- Step 1: Meeting -->
+                <div class="process-card reveal">
+                    <div class="process-card-img-wrapper">
+                        <img src="img/howwework/Work meeting.jpg" alt="Work Meeting Consultation" class="process-card-img">
+                        <div class="process-hover-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
                     </div>
+                    <span class="process-step-badge">Step 01</span>
+                    <h3 class="process-card-title">Meeting</h3>
+                    <p class="process-card-desc">We help you select the best fabrics from wide range at our showroom or at your home.</p>
                 </div>
                 
-                <!-- Right Side: 4 Step Cards -->
-                <div class="col-lg-9">
-                    <div class="process-cards-row">
-                        <!-- Step 1: Meeting -->
-                        <div class="process-card reveal">
-                            <div class="process-card-img-wrapper">
-                                <img src="img/howwework/Work meeting.jpg" alt="Work Meeting Consultation" class="process-card-img">
-                                <div class="process-hover-icon">
-                                    <i class="fa-solid fa-comments"></i>
-                                </div>
-                            </div>
-                            <span class="process-step-badge">Step 01</span>
-                            <h3 class="process-card-title">Meeting</h3>
-                            <p class="process-card-desc">We help you select the best fabrics from wide range at our showroom or at your home.</p>
-                        </div>
-                        
-                        <!-- Step 2: Measuring -->
-                        <div class="process-card reveal reveal-delay-1">
-                            <div class="process-card-img-wrapper">
-                                <img src="img/howwework/Measure.jpg" alt="Window Measurements" class="process-card-img">
-                                <div class="process-hover-icon">
-                                    <i class="fa-solid fa-ruler-combined"></i>
-                                </div>
-                            </div>
-                            <span class="process-step-badge">Step 02</span>
-                            <h3 class="process-card-title">Measuring</h3>
-                            <p class="process-card-desc">Taking measurement of your windows for perfect fitting.</p>
-                        </div>
-                        
-                        <!-- Step 3: Stitching -->
-                        <div class="process-card reveal reveal-delay-2">
-                            <div class="process-card-img-wrapper">
-                                <img src="img/howwework/Stitching.jpg" alt="Master Stitching & Tailoring" class="process-card-img">
-                                <div class="process-hover-icon">
-                                    <i class="fa-solid fa-scissors"></i>
-                                </div>
-                            </div>
-                            <span class="process-step-badge">Step 03</span>
-                            <h3 class="process-card-title">Stitching</h3>
-                            <p class="process-card-desc">Curtain Stitching services are rendered by our team of expert tailors using fine quality threads that are durable for life.</p>
-                        </div>
-                        
-                        <!-- Step 4: Installation -->
-                        <div class="process-card reveal reveal-delay-3">
-                            <div class="process-card-img-wrapper">
-                                <img src="img/howwework/installation.jpg" alt="Professional Installation" class="process-card-img">
-                                <div class="process-hover-icon">
-                                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                                </div>
-                            </div>
-                            <span class="process-step-badge">Step 04</span>
-                            <h3 class="process-card-title">Installation</h3>
-                            <p class="process-card-desc">Curtain installation from our experienced team.</p>
+                <!-- Step 2: Measuring -->
+                <div class="process-card reveal reveal-delay-1">
+                    <div class="process-card-img-wrapper">
+                        <img src="img/howwework/Measure.jpg" alt="Window Measurements" class="process-card-img">
+                        <div class="process-hover-icon">
+                            <i class="fa-solid fa-ruler-combined"></i>
                         </div>
                     </div>
+                    <span class="process-step-badge">Step 02</span>
+                    <h3 class="process-card-title">Measuring</h3>
+                    <p class="process-card-desc">Taking measurement of your windows for perfect fitting.</p>
+                </div>
+                
+                <!-- Step 3: Stitching -->
+                <div class="process-card reveal reveal-delay-2">
+                    <div class="process-card-img-wrapper">
+                        <img src="img/howwework/Stitching.jpg" alt="Master Stitching & Tailoring" class="process-card-img">
+                        <div class="process-hover-icon">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                    </div>
+                    <span class="process-step-badge">Step 03</span>
+                    <h3 class="process-card-title">Stitching</h3>
+                    <p class="process-card-desc">Curtain Stitching services are rendered by our team of expert tailors using fine quality threads that are durable for life.</p>
+                </div>
+                
+                <!-- Step 4: Installation -->
+                <div class="process-card reveal reveal-delay-3">
+                    <div class="process-card-img-wrapper">
+                        <img src="img/howwework/installation.jpg" alt="Professional Installation" class="process-card-img">
+                        <div class="process-hover-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                    </div>
+                    <span class="process-step-badge">Step 04</span>
+                    <h3 class="process-card-title">Installation</h3>
+                    <p class="process-card-desc">Curtain installation from our experienced team.</p>
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ $projectCategories = [
         'desc' => 'Precision timber Venetian slats, motorized roller screens, and textured fabric Roman blinds engineered to millimeter precision.',
         'badge' => 'Blinds',
         'icon' => 'fa-solid fa-bars',
-        'hero' => 'img/project/binds/IMG-20260312-WA0041.jpg.jpeg',
+        'hero' => 'img/project/binds/IMG_20260612_123725280_HDR.jpg.jpeg',
         'tags' => ['Venetian Timber', 'Motorized Rollers', 'UV Protective', 'Roman Drapes']
     ],
     'sofa' => [

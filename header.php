@@ -1,14 +1,52 @@
 <?php
 // Determine the current page filename
 $current_page = basename($_SERVER['PHP_SELF']);
+
+// Dynamic SEO Fallbacks
+$meta_title = isset($pageTitle) && !empty($pageTitle) 
+    ? $pageTitle 
+    : "CC Pardawala | Premium Curtains, Blinds & Luxury Home Furnishings";
+
+$meta_description = isset($pageDescription) && !empty($pageDescription) 
+    ? $pageDescription 
+    : "Transform your spaces with CC Pardawala — premier manufacturer of bespoke curtains, motorized blinds, sofa fabrics, wallpapers & luxury furnishings across Gujarat and worldwide.";
+
+$meta_keywords = isset($pageKeywords) && !empty($pageKeywords)
+    ? $pageKeywords
+    : "curtains in Gujarat, bespoke drapes, motorized blinds, Roman blinds, sofa fabrics, luxury upholstery, wallpapers, home furnishing store, Vadodara, Rajkot, Jamnagar, NRI curtains";
+
+$og_image = isset($pageOgImage) && !empty($pageOgImage)
+    ? $pageOgImage
+    : "img/Homebanner.jpg";
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo isset($pageTitle) ? $pageTitle : "CC Pardawala | Premium Curtains, Blinds & Home Furnishings"; ?></title>
-    <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : "Discover made-to-measure premium curtains, Roman & roller blinds, and sofa fabrics at CC Pardawala. Servicing Vadodara, Rajkot, Jamnagar & NRIs globally with custom home decor solutions."; ?>">
+    
+    <!-- Primary Meta Tags -->
+    <title><?php echo htmlspecialchars($meta_title); ?></title>
+    <meta name="title" content="<?php echo htmlspecialchars($meta_title); ?>">
+    <meta name="description" content="<?php echo htmlspecialchars($meta_description); ?>">
+    <meta name="keywords" content="<?php echo htmlspecialchars($meta_keywords); ?>">
+    <meta name="author" content="CC Pardawala">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?php echo htmlspecialchars($meta_title); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($meta_description); ?>">
+    <meta property="og:image" content="<?php echo htmlspecialchars($og_image); ?>">
+    <meta property="og:site_name" content="CC Pardawala">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($meta_title); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($meta_description); ?>">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
+
+    <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
