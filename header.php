@@ -9,11 +9,11 @@ $meta_title = isset($pageTitle) && !empty($pageTitle)
 
 $meta_description = isset($pageDescription) && !empty($pageDescription) 
     ? $pageDescription 
-    : "Transform your spaces with CC Pardawala — premier manufacturer of bespoke curtains, motorized blinds, sofa fabrics, wallpapers & luxury furnishings across Gujarat and worldwide.";
+    : "Transform your spaces with CC Pardawala — premier manufacturer of custom curtains, motorized blinds, sofa fabrics, wallpapers & luxury furnishings across Gujarat and worldwide.";
 
 $meta_keywords = isset($pageKeywords) && !empty($pageKeywords)
     ? $pageKeywords
-    : "curtains in Gujarat, bespoke drapes, motorized blinds, Roman blinds, sofa fabrics, luxury upholstery, wallpapers, home furnishing store, Vadodara, Rajkot, Jamnagar, NRI curtains";
+    : "curtains in Gujarat, curtain designing, drapes, motorized blinds, Roman blinds, sofa fabrics, luxury upholstery, wallpapers, home furnishing store, Vadodara, Rajkot, Jamnagar, NRI curtains";
 
 $og_image = isset($pageOgImage) && !empty($pageOgImage)
     ? $pageOgImage

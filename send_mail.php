@@ -1,7 +1,7 @@
 <?php
 /**
  * Contact Form Email Processor — CC Pardawala
- * Receives POST data and delivers emails via Gmail SMTP to dhruvskhorawa.dk@gmail.com
+ * Receives POST data and delivers emails via Yahoo Mail SMTP to curtaincraft@yahoo.com
  */
 
 header('Content-Type: application/json; charset=UTF-8');
@@ -32,6 +32,26 @@ if (empty($name) || empty($phone)) {
     exit;
 }
 
+// Clean & normalize phone number for universal dialing & WhatsApp
+$digitsOnly = preg_replace('/[^0-9]/', '', $phone);
+if (strlen($digitsOnly) === 10) {
+    $cleanTel = '+91' . $digitsOnly;
+    $waNumber = '91' . $digitsOnly;
+    $displayPhone = '+91 ' . substr($digitsOnly, 0, 5) . ' ' . substr($digitsOnly, 5);
+} elseif (strlen($digitsOnly) === 11 && substr($digitsOnly, 0, 1) === '0') {
+    $cleanTel = '+91' . substr($digitsOnly, 1);
+    $waNumber = '91' . substr($digitsOnly, 1);
+    $displayPhone = '+91 ' . substr($digitsOnly, 1, 5) . ' ' . substr($digitsOnly, 6);
+} elseif (strlen($digitsOnly) === 12 && substr($digitsOnly, 0, 2) === '91') {
+    $cleanTel = '+' . $digitsOnly;
+    $waNumber = $digitsOnly;
+    $displayPhone = '+91 ' . substr($digitsOnly, 2, 5) . ' ' . substr($digitsOnly, 7);
+} else {
+    $cleanTel = '+' . ltrim($digitsOnly, '+');
+    $waNumber = $digitsOnly;
+    $displayPhone = $phone;
+}
+
 // Format submission time
 $submittedAt = date('d M Y, h:i A') . ' (IST)';
 
@@ -55,9 +75,6 @@ $htmlBody = '
         .details-table td.label { font-weight: 600; color: #736757; width: 35%; text-transform: uppercase; font-size: 12px; letter-spacing: 0.5px; }
         .details-table td.value { color: #1C1917; font-weight: 500; }
         .message-box { background: #FAF8F5; border-left: 4px solid #C5A880; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 30px; font-size: 14px; line-height: 1.6; color: #333; }
-        .action-btns { text-align: center; margin-bottom: 25px; }
-        .btn { display: inline-block; padding: 12px 24px; background: #C5A880; color: #FFFFFF !important; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 13px; margin: 0 5px; text-transform: uppercase; letter-spacing: 1px; }
-        .btn-phone { background: #1C1917; }
         .email-footer { background: #F9F7F2; padding: 20px; text-align: center; border-top: 1px solid #EAE4D8; font-size: 12px; color: #8C827A; }
     </style>
 </head>
@@ -79,7 +96,9 @@ $htmlBody = '
                 </tr>
                 <tr>
                     <td class="label">Phone Number:</td>
-                    <td class="value"><a href="tel:' . htmlspecialchars($phone) . '" style="color: #8A6D3B; text-decoration: none; font-weight: bold;">' . htmlspecialchars($phone) . '</a></td>
+                    <td class="value">
+                        <a href="tel:' . $cleanTel . '" style="color: #8A6D3B; text-decoration: none; font-weight: bold; font-size: 15px;">' . htmlspecialchars($displayPhone) . '</a>
+                    </td>
                 </tr>
                 <tr>
                     <td class="label">Email Address:</td>
@@ -100,9 +119,22 @@ $htmlBody = '
                 ' . nl2br(htmlspecialchars($message)) . '
             </div>
 
-            <div class="action-btns">
-                <a href="tel:' . htmlspecialchars($phone) . '" class="btn btn-phone">Call Client Now</a>
-                <a href="https://wa.me/' . preg_replace('/[^0-9]/', '', $phone) . '" class="btn" style="background: #25D366;">WhatsApp Chat</a>
+            <!-- Instant Contact Action Buttons (Table-based for 100% Email Client Compatibility) -->
+            <div style="text-align: center; margin: 30px 0 10px 0;">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto;">
+                    <tr>
+                        <td align="center" style="padding: 6px 8px;">
+                            <a href="tel:' . $cleanTel . '" style="background-color: #1C1917; color: #FAF7F2; padding: 14px 24px; font-size: 13px; font-weight: bold; text-decoration: none; border-radius: 6px; display: inline-block; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid #333333;">
+                                &#9742; Call ' . htmlspecialchars($displayPhone) . '
+                            </a>
+                        </td>
+                        <td align="center" style="padding: 6px 8px;">
+                            <a href="https://api.whatsapp.com/send?phone=' . $waNumber . '&text=' . urlencode('Hello ' . $name . ', thank you for contacting CC Pardawala regarding ' . $service . '.') . '" target="_blank" style="background-color: #25D366; color: #FFFFFF; padding: 14px 24px; font-size: 13px; font-weight: bold; text-decoration: none; border-radius: 6px; display: inline-block; text-transform: uppercase; letter-spacing: 0.5px;">
+                                WhatsApp Chat
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
 
@@ -114,8 +146,8 @@ $htmlBody = '
 </html>
 ';
 
-$toEmail = 'dhruvskhorawa.dk@gmail.com';
-$toName = 'Dhruv Khorawa (CC Pardawala)';
+$toEmail = 'curtaincraft@yahoo.com';
+$toName = 'CC Pardawala (Curtain Craft)';
 $subject = "New Styling Inquiry from " . $name . " [" . $service . "]";
 
 // Send mail via SimpleSMTP

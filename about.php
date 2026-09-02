@@ -14,7 +14,8 @@ include 'header.php';
             </span>
             <h1 class="banner-title-center">About Our Heritage</h1>
             <p class="banner-subtitle-center">
-                Curating fine windows, bespoke draperies, modern blinds, and luxury living spaces across Gujarat and worldwide for over 24 years.
+                Curating fine windows, curtain designing, modern blinds, and luxury living spaces across Gujarat and
+                worldwide for over 24 years.
             </p>
             <div class="banner-breadcrumbs-center">
                 <a href="index.php">Home</a>
@@ -36,7 +37,7 @@ include 'header.php';
                 <h2 class="about-main-title">Two Decades of Curating Fine Living Spaces</h2>
 
                 <p class="about-lead-text">
-                    Founded in 2002, CC Pardawala is celebrated as the premier wholesaler and bespoke manufacturer of
+                    Founded in 2002, CC Pardawala is celebrated as the premier wholesaler and custom manufacturer of
                     custom draperies, automated blinds, and luxury upholstery in Saurashtra, Gujarat.
                 </p>
 
@@ -46,9 +47,9 @@ include 'header.php';
                 </div>
 
                 <p class="about-sub-text">
-                    From our artisanal roots, we have expanded to 7 state-of-the-art experience centers across Vadodara,
-                    Rajkot, Jamnagar, Junagadh, Morbi, Dhoraji, and Jetpur, proudly beautifying over 200,000 homes and
-                    commercial residences worldwide.
+                    From our artisanal roots, we have expanded to state-of-the-art experience centers across Vadodara,
+                    Rajkot, Jamnagar, Junagadh, Morbi, Dhoraji, and Surat (Upcoming), proudly beautifying over 500,000 homes and
+                    commercial spaces worldwide.
                 </p>
 
                 <div class="about-highlights-list">
@@ -58,7 +59,7 @@ include 'header.php';
                     </div>
                     <div class="about-highlight-item">
                         <div class="about-highlight-icon"><i class="fa-solid fa-check"></i></div>
-                        <span>Master Tailoring — Italian precision drapery folds & motorized channels</span>
+                        <span>Master Tailoring — Italian precision drapery folds & motorized Curtains</span>
                     </div>
                     <div class="about-highlight-item">
                         <div class="about-highlight-icon"><i class="fa-solid fa-check"></i></div>
@@ -128,7 +129,7 @@ include 'header.php';
                         </div>
                         <span class="about-pillar-num">02</span>
                     </div>
-                    <h4 class="about-pillar-title">Bespoke Italian Craft</h4>
+                    <h4 class="about-pillar-title">Precision Craft</h4>
                     <p class="about-pillar-desc">Every curtain heading, motorized channel, roman fold, and sofa stitch
                         is measured and customized to millimeter precision by certified master artisans.</p>
                 </div>

@@ -14,7 +14,8 @@ include 'header.php';
             </span>
             <h1 class="banner-title-center">Why Choose Us</h1>
             <p class="banner-subtitle-center">
-                Discover what makes us Saurashtra's most trusted brand for bespoke window styling, custom draperies, and luxury home furnishings.
+                Discover what makes us Saurashtra's most trusted brand for curtain designing, window styling, and luxury
+                home furnishings.
             </p>
             <div class="banner-breadcrumbs-center">
                 <a href="index.php">Home</a>
@@ -30,17 +31,21 @@ include 'header.php';
      ========================================== -->
 <section class="whyus-section">
     <div class="container">
-        
+
         <!-- Section Header -->
         <div class="text-center mb-5 reveal">
-            <span class="hero-badge" style="color: var(--accent-gold); background-color: var(--accent-light); margin-bottom: 12px; display: inline-block;">Our Core Strengths</span>
+            <span class="hero-badge"
+                style="color: var(--accent-gold); background-color: var(--accent-light); margin-bottom: 12px; display: inline-block;">Our
+                Core Strengths</span>
             <h2 class="section-title">Built On Precision, Scale & Trust</h2>
-            <p style="color: var(--text-secondary); max-width: 680px; margin: 0 auto; font-size: 1.05rem;">We combine state-of-the-art in-house manufacturing with personalized design consultation to deliver unmatched value to every client.</p>
+            <p style="color: var(--text-secondary); max-width: 680px; margin: 0 auto; font-size: 1.05rem;">We combine
+                state-of-the-art in-house manufacturing with personalized design consultation to deliver unmatched value
+                to every client.</p>
         </div>
 
         <!-- 6 Pillar Cards Grid (3x2) -->
         <div class="whyus-grid">
-            
+
             <!-- Pillar 1: Product Range -->
             <div class="whyus-card reveal">
                 <div class="whyus-card-top">
@@ -50,7 +55,8 @@ include 'header.php';
                     </div>
                 </div>
                 <h3 class="whyus-card-title">Product Range</h3>
-                <p class="whyus-card-text">We have the largest range of Curtains, Blinds, Sofa Fabrics and all home decor products with various types and brands under one roof to cater every requirements.</p>
+                <p class="whyus-card-text">We have the largest range of Curtains, Blinds, Sofa Fabrics and all home
+                    decor products with various types and brands under one roof to cater every requirements.</p>
             </div>
 
             <!-- Pillar 2: Price Range -->
@@ -62,7 +68,8 @@ include 'header.php';
                     </div>
                 </div>
                 <h3 class="whyus-card-title">Price Range</h3>
-                <p class="whyus-card-text">We have the widest range when it comes to price, which is beneficial for residential as well as commercial use.</p>
+                <p class="whyus-card-text">We have the widest range when it comes to price, which is beneficial for
+                    residential as well as commercial use.</p>
             </div>
 
             <!-- Pillar 3: Prompt & Professional Service -->
@@ -74,7 +81,8 @@ include 'header.php';
                     </div>
                 </div>
                 <h3 class="whyus-card-title">Prompt & Professional Service</h3>
-                <p class="whyus-card-text">We have dedicated team of professionals to provide suitable solutions with prompt and quality to individual clients and end to end services in one call.</p>
+                <p class="whyus-card-text">We have dedicated team of professionals to provide suitable solutions with
+                    prompt and quality to individual clients and end to end services in one call.</p>
             </div>
 
             <!-- Pillar 4: Save Time And Money -->
@@ -86,7 +94,8 @@ include 'header.php';
                     </div>
                 </div>
                 <h3 class="whyus-card-title">Save Time And Money</h3>
-                <p class="whyus-card-text">Having an in-house assembly unit and stocks is an added advantage to our esteemed clients who are in urgent need of the products or services.</p>
+                <p class="whyus-card-text">Having an in-house assembly unit and stocks is an added advantage to our
+                    esteemed clients who are in urgent need of the products or services.</p>
             </div>
 
             <!-- Pillar 5: Proper Assistance/ Guidance -->
@@ -98,7 +107,8 @@ include 'header.php';
                     </div>
                 </div>
                 <h3 class="whyus-card-title">Proper Assistance/ Guidance</h3>
-                <p class="whyus-card-text">As per the site and daylight conditions, we assess and ascertain the type of curtains or any other products required there and give cost-efficient solutions.</p>
+                <p class="whyus-card-text">As per the site and daylight conditions, we assess and ascertain the type of
+                    curtains or any other products required there and give cost-efficient solutions.</p>
             </div>
 
             <!-- Pillar 6: Customer Satisfaction -->
@@ -110,7 +120,9 @@ include 'header.php';
                     </div>
                 </div>
                 <h3 class="whyus-card-title">Customer Satisfaction</h3>
-                <p class="whyus-card-text">We take all efforts to ensure each and every client leaves with smiling face. Customer Satisfaction is our "MOTO" to make every client satisfied with our products and services.</p>
+                <p class="whyus-card-text">We take all efforts to ensure each and every client leaves with smiling face.
+                    Customer Satisfaction is our "MOTO" to make every client satisfied with our products and services.
+                </p>
             </div>
 
         </div>
@@ -123,7 +135,7 @@ include 'header.php';
             </div>
             <div class="whyus-trust-item">
                 <span class="whyus-trust-num">10,000+</span>
-                <span class="whyus-trust-label">Fabrics & Wallpaper Rolls</span>
+                <span class="whyus-trust-label">Options Available</span>
             </div>
             <div class="whyus-trust-item">
                 <span class="whyus-trust-num">7</span>

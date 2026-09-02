@@ -12,9 +12,9 @@ include 'header.php';
             <span class="banner-badge">
                 <i class="fa-solid fa-earth-americas"></i> Global NRI Concierge
             </span>
-            <h1 class="banner-title-center">Curtains For NRIs</h1>
+            <h1 class="banner-title-center">Curtains For NRI<span style="text-transform: lowercase;">s</span></h1>
             <p class="banner-subtitle-center">
-                10 easy steps to help you get the right curtain fabrics, tailored designs, and seamless fitting for your home in Gujarat — from anywhere in the world.
+                A comprehensive, step-by-step guide designed to help international clientele seamlessly source premium curtain fabrics or blinds, customize them to precise made-to-measure specifications, and arrange secure, door-to-door global shipping directly from our manufacturing facility to your residence.
             </p>
             <div class="banner-breadcrumbs-center">
                 <a href="index.php">Home</a>
@@ -49,9 +49,9 @@ include 'header.php';
             <!-- Right: Content Narrative -->
             <div class="nri-content-block reveal reveal-delay-1">
                 <span class="hero-badge" style="color: var(--accent-gold); background-color: var(--accent-light); margin-bottom: 12px; display: inline-block;">Remote Styling Experience</span>
-                <h2 class="section-title-left" style="margin-bottom: 20px;">Furnish Your Home In Gujarat Without Stepping Out</h2>
+                <h2 class="section-title-left" style="margin-bottom: 20px;">Draping Your Global Home in Comfort: Premium Made-to-Measure Curtains & Blinds, Shipped Directly to Your Doorstep</h2>
                 <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.75; margin-bottom: 24px;">
-                    We understand that designing or renovating a property in Gujarat while living abroad requires absolute trust, precise measurements, and flawless execution. Our dedicated NRI styling department has styled over 500+ NRI villas across the USA, UK, Canada, and the Gulf.
+                   We know that designing your home from miles away takes absolute trust, exact measurements, and perfect execution. To make the distance disappear, our dedicated NRI team brings the showroom directly to your screen. Having beautifully styled over 500+ luxury villas worldwide with custom curtains and blinds, we handle every detail smoothly—from your first fabric choice right to your doorstep."
                 </p>
 
                 <div class="d-flex flex-column gap-3 mb-4">
@@ -61,7 +61,7 @@ include 'header.php';
                     </div>
                     <div class="d-flex align-items-center gap-3">
                         <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--accent-light); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0;"><i class="fa-solid fa-check"></i></div>
-                        <span style="font-size: 0.95rem; color: var(--text-primary); font-weight: 500;">Virtual millimeter-level guidance or on-site engineer visit in Gujarat.</span>
+                        <span style="font-size: 0.95rem; color: var(--text-primary); font-weight: 500;">We will guide you over a live video call to get perfect, worry-free measurements.</span>
                     </div>
                     <div class="d-flex align-items-center gap-3">
                         <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--accent-light); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0;"><i class="fa-solid fa-check"></i></div>
@@ -260,7 +260,7 @@ include 'header.php';
                         </div>
                     </div>
                     <h4 class="nri-card-step-title">Formal Itemized Quotation</h4>
-                    <p class="nri-card-step-desc">Upon design and measurement sign-off, we email a comprehensive itemized quote with transparent factory rates.</p>
+                    <p class="nri-card-step-desc">Upon receiving your sign-off on the design and final measurements, we will provide you with a formal quote.</p>
                 </div>
             </div>
 
@@ -281,8 +281,8 @@ include 'header.php';
                             <i class="fa-solid fa-credit-card"></i>
                         </div>
                     </div>
-                    <h4 class="nri-card-step-title">70% Advance Payment</h4>
-                    <p class="nri-card-step-desc">Pay 70% advance of the approved quotation via international bank transfer or secure online gateway to initiate crafting.</p>
+                    <h4 class="nri-card-step-title">Advance Payment</h4>
+                    <p class="nri-card-step-desc">After you approve the design, measurements, and quote, we will request an advance payment to begin production.</p>
                 </div>
 
                 <!-- Center Node -->
@@ -319,7 +319,7 @@ include 'header.php';
                         </div>
                     </div>
                     <h4 class="nri-card-step-title">Master Workshop Tailoring</h4>
-                    <p class="nri-card-step-desc">Fabrics are milled, laser-cut, and precision-stitched by master tailors in our in-house weaving facility under strict QC.</p>
+                    <p class="nri-card-step-desc">Fabrics are milled and precision-stitched by master tailors in our in-house weaving facility under strict QC.</p>
                 </div>
             </div>
 
@@ -334,7 +334,7 @@ include 'header.php';
                         </div>
                     </div>
                     <h4 class="nri-card-step-title">Packing & Cargo Dispatch</h4>
-                    <p class="nri-card-step-desc">Curtains are steam-pressed, labeled by room, export-packed in moisture-proof boxes, and dispatched to your local representative or air cargo.</p>
+                    <p class="nri-card-step-desc">Curtains are steam-pressed, labeled by room, packed in boxes, and dispatched to your local representative or air cargo.</p>
                 </div>
 
                 <!-- Center Node -->

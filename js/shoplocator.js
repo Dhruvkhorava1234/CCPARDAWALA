@@ -5,13 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const mapElement = document.getElementById('gujaratMap');
     if (!mapElement) return;
 
-    // 7 Showroom Locations across Gujarat
+    // Active Showroom Locations across Gujarat
     const stores = [
         {
             id: 'vadodara',
             city: 'Vadodara',
-            name: 'Vadodara Main Experience Center & HQ',
-            badge: 'Main HQ & Flagship',
+            cityLabel: 'Vadodara',
+            name: "Vadodara's Exclusive Showroom",
+            badge: 'Main HQ & Exclusive',
             address: 'SB-1 To 5, LA-CITADEL COMPLEX, Nutan Bharat Society, Dr Rustom Cama Marg, Opposite Velvet Bakers, Alkapuri, Vadodara - 390007',
             hours: '10:00 AM – 8:30 PM (All 7 Days Open)',
             phone: '+91 95865 41555',
@@ -23,80 +24,86 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 'rajkot',
             city: 'Rajkot',
-            name: 'Rajkot Experience Showroom',
+            cityLabel: 'Rajkot',
+            name: 'Rajkot Showroom',
             badge: 'Experience Studio',
-            address: 'Yagnik Road Commercial Plaza, Rajkot, Gujarat',
+            address: 'Ground Floor 3/4 Block A, Pramukh Swami Arcade, Yagnik Road, Malaviya Chowk, Rajkot - 360 001',
             hours: '10:00 AM – 8:30 PM',
-            phone: '+91 95865 41555',
+            phone: '+91 98797 54155',
             lat: 22.2965,
             lng: 70.7963,
             isFlagship: false,
-            gmapsUrl: 'https://maps.google.com/?q=Rajkot+CC+Pardawala'
+            gmapsUrl: 'https://maps.google.com/?q=Pramukh+Swami+Arcade+Yagnik+Road+Malaviya+Chowk+Rajkot'
         },
         {
             id: 'jamnagar',
             city: 'Jamnagar',
-            name: 'Jamnagar Experience Showroom',
+            cityLabel: 'Jamnagar 1',
+            name: 'Jamnagar Showroom 1',
             badge: 'Experience Studio',
-            address: 'Guru Govind Singh Hospital Road, Jamnagar, Gujarat',
+            address: 'Amber Cinema Road, NEO Square Seller, Under Poonamben Maadam Office, Jamnagar - 361008',
             hours: '10:00 AM – 8:30 PM',
-            phone: '+91 95865 41555',
-            lat: 22.4707,
-            lng: 70.0577,
+            phone: '+91 99792 88033',
+            lat: 22.4674,
+            lng: 70.0614,
             isFlagship: false,
-            gmapsUrl: 'https://maps.google.com/?q=Jamnagar+CC+Pardawala'
+            gmapsUrl: 'https://maps.google.com/?q=NEO+Square+Amber+Cinema+Road+Jamnagar'
+        },
+        {
+            id: 'jamnagar2',
+            city: 'Jamnagar',
+            cityLabel: 'Jamnagar 2',
+            name: 'Jamnagar Showroom 2',
+            badge: 'Experience Studio',
+            address: 'Guru Govind Singh Hospital Road, Jamnagar - 361008',
+            hours: '10:00 AM – 8:30 PM',
+            phone: '+91 99792 88033',
+            lat: 22.4760,
+            lng: 70.0670,
+            isFlagship: false,
+            gmapsUrl: 'https://maps.google.com/?q=Guru+Govind+Singh+Hospital+Road+Jamnagar'
         },
         {
             id: 'junagadh',
             city: 'Junagadh',
+            cityLabel: 'Junagadh',
             name: 'Junagadh Showroom',
             badge: 'Regional Center',
-            address: 'Kalwa Chowk Commercial Center, Junagadh, Gujarat',
+            address: 'Talav Gate, Opp. Sahyog chamber, Near Railway Crossing, Junagadh - 362001',
             hours: '10:00 AM – 8:30 PM',
-            phone: '+91 95865 41555',
+            phone: '+91 99786 54155',
             lat: 21.5222,
             lng: 70.4579,
             isFlagship: false,
-            gmapsUrl: 'https://maps.google.com/?q=Junagadh+CC+Pardawala'
+            gmapsUrl: 'https://maps.google.com/?q=Talav+Gate+Junagadh'
         },
         {
             id: 'morbi',
             city: 'Morbi',
+            cityLabel: 'Morbi',
             name: 'Morbi Showroom',
             badge: 'Regional Center',
-            address: 'Lati Road Commercial Avenue, Morbi, Gujarat',
+            address: 'Ravapar Road, Opp. New Rajkot Nagrik Bank, Shop No. 8-9, Sidhhivinayk Complex, Ground Floor, Morbi - 363641',
             hours: '10:00 AM – 8:30 PM',
-            phone: '+91 95865 41555',
+            phone: '+91 99251 84281',
             lat: 22.8173,
             lng: 70.8378,
             isFlagship: false,
-            gmapsUrl: 'https://maps.google.com/?q=Morbi+CC+Pardawala'
+            gmapsUrl: 'https://maps.google.com/?q=Sidhhivinayk+Complex+Ravapar+Road+Morbi'
         },
         {
             id: 'dhoraji',
             city: 'Dhoraji',
+            cityLabel: 'Dhoraji',
             name: 'Dhoraji Showroom',
             badge: 'Regional Outlet',
-            address: 'Main Bazaar Road, Dhoraji, Gujarat',
+            address: 'Junagadh Road, Opp. Vijay Oil Mill, Dhoraji - 360410',
             hours: '10:00 AM – 8:30 PM',
-            phone: '+91 95865 41555',
+            phone: '+91 98257 71719',
             lat: 21.7340,
             lng: 70.4447,
             isFlagship: false,
-            gmapsUrl: 'https://maps.google.com/?q=Dhoraji+CC+Pardawala'
-        },
-        {
-            id: 'jetpur',
-            city: 'Jetpur',
-            name: 'Jetpur Showroom',
-            badge: 'Regional Outlet',
-            address: 'Sardar Chowk Commercial Complex, Jetpur, Gujarat',
-            hours: '10:00 AM – 8:30 PM',
-            phone: '+91 95865 41555',
-            lat: 21.7587,
-            lng: 70.6277,
-            isFlagship: false,
-            gmapsUrl: 'https://maps.google.com/?q=Jetpur+CC+Pardawala'
+            gmapsUrl: 'https://maps.google.com/?q=Junagadh+Road+Dhoraji'
         }
     ];
 
@@ -115,10 +122,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const markers = {};
 
-    // Add pins for all 7 locations
+    // Add pins with permanent city labels on top of each pin
     stores.forEach(store => {
+        const cityLabel = store.cityLabel || store.city;
         const iconHtml = store.isFlagship ? 
-            `<div class="custom-map-pin flagship" title="${store.name}"><i class="fa-solid fa-crown"></i></div>` : 
+            `<div class="custom-map-pin flagship" title="${store.name}"><i class="fa-solid fa-location-dot"></i></div>` : 
             `<div class="custom-map-pin" title="${store.name}"><i class="fa-solid fa-location-dot"></i></div>`;
 
         const customIcon = L.divIcon({
@@ -126,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
             className: 'custom-leaflet-marker',
             iconSize: [44, 44],
             iconAnchor: [22, 22],
-            popupAnchor: [0, -24]
+            popupAnchor: [0, -28]
         });
 
         const popupContent = `
@@ -147,6 +155,15 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
 
         const marker = L.marker([store.lat, store.lng], { icon: customIcon }).addTo(map);
+
+        // Permanent luxury city label badge on top of the pin
+        marker.bindTooltip(cityLabel, {
+            permanent: true,
+            direction: 'top',
+            className: `map-city-tooltip${store.isFlagship ? ' flagship' : ''}`,
+            offset: [0, -20]
+        });
+
         marker.bindPopup(popupContent);
 
         // When pin clicked: highlight corresponding store card

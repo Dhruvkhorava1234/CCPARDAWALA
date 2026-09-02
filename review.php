@@ -120,7 +120,7 @@ include 'header.php';
                         "The motorized wave pleat curtains installed in our living room are simply spectacular! The double-height finish and precision motorization by Somfy work like magic. Very polite staff and clean installation."
                     </p>
                     <div class="review-tag">
-                        <i class="fa-solid fa-scroll me-1 text-gold"></i> Bespoke Wave Pleat Curtains
+                        <i class="fa-solid fa-scroll me-1 text-gold"></i> Wave Pleat Curtain Designing
                     </div>
                 </div>
             </div>

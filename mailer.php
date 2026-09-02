@@ -1,15 +1,15 @@
 <?php
 /**
  * Standalone SMTP Mailer for CC Pardawala
- * Uses direct SSL socket connection to smtp.gmail.com:465
+ * Uses direct SSL socket connection to smtp.mail.yahoo.com:465
  */
 
 class SimpleSMTP {
-    private $host = 'ssl://smtp.gmail.com';
+    private $host = 'ssl://smtp.mail.yahoo.com';
     private $port = 465;
     private $timeout = 15;
-    private $user = 'dhruvskhorawa.dk@gmail.com';
-    private $pass = 'ypgbhhuahwstfrfn'; // App Password without spaces
+    private $user = 'curtaincraft@yahoo.com';
+    private $pass = 'idasdonwsrnnadhc'; // Yahoo App Password without spaces
 
     private function getResponse($socket) {
         $response = '';
@@ -93,10 +93,8 @@ class SimpleSMTP {
         }
 
         // Headers & Content
-        $boundary = md5(time());
         $headers = "MIME-Version: 1.0\r\n";
-        $headers .= "From: CC Pardawala Website <{$this->user}>\r\n";
-        $headers .= "Reply-To: {$fromName} <{$fromEmail}>\r\n";
+        $headers .= "From: \"CC Pardawala Website\" <{$this->user}>\r\n";
         $headers .= "To: {$toName} <{$to}>\r\n";
         $headers .= "Subject: =?UTF-8?B?" . base64_encode($subject) . "?=\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";

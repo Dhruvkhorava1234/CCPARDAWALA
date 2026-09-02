@@ -63,13 +63,13 @@ include 'header.php';
                 </div>
  
                 <!-- Showroom -->
-                <div style="display: flex; gap: 20px; align-items: center;">
-                    <div style="background-color: var(--accent-light); color: var(--accent-gold); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;"><i class="fa-solid fa-location-dot"></i></div>
-                    <div>
-                        <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 1px; font-weight: 600;">Headquarters Showroom</div>
-                        <div style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); line-height: 1.5; margin-top: 2px;">SB-1 To 5, LA-CITADEL COMPLEX, Nutan Bharat Society, Dr Rustom Cama Marg, Opposite Velvet Bakers, Alkapuri, Vadodra -390007</div>
-                    </div>
-                </div>
+                <!-- <div style="display: flex; gap: 20px; align-items: center;"> -->
+                    <!-- <div style="background-color: var(--accent-light); color: var(--accent-gold); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;"><i class="fa-solid fa-location-dot"></i></div> -->
+                    <!-- <div> -->
+                        <!-- <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 1px; font-weight: 600;">Headquarters Showroom</div> -->
+                        <!-- <div style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); line-height: 1.5; margin-top: 2px;">SB-1 To 5, LA-CITADEL COMPLEX, Nutan Bharat Society, Dr Rustom Cama Marg, Opposite Velvet Bakers, Alkapuri, Vadodra -390007</div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
 
             <!-- Booking Form -->
@@ -99,7 +99,7 @@ include 'header.php';
                             <label for="c-service" class="form-label" style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-secondary); font-weight: 600; letter-spacing: 0.5px;">I'm interested in *</label>
                             <select id="c-service" name="service" class="form-control" style="background-color: var(--bg-main); border: 1px solid var(--border-subtle); padding: 12px; border-radius: var(--border-radius-md);" required>
                                 <option value="" disabled selected>Select service...</option>
-                                <option value="Curtains">Bespoke Curtains</option>
+                                <option value="Curtains">Curtain Designing</option>
                                 <option value="Blinds">Modern Blinds</option>
                                 <option value="Sofa Fabrics">Upholstery & Sofa Fabrics</option>
                                 <option value="NRI Consultation">NRI Home Consultation</option>

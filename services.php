@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Bespoke Interior Services | CC Pardawala - Curtains, Blinds & Upholstery";
+$pageTitle = "Curtain Designing & Interior Services | CC Pardawala - Curtains, Blinds & Upholstery";
 $pageDescription = "Explore CC Pardawala's luxury home styling services — custom handcrafted curtains, motorized blinds, designer wallpapers, sofa upholstery, mattresses & artisan rugs.";
 $activePage = 'services';
 include 'header.php';
@@ -10,7 +10,7 @@ include 'header.php';
     <div class="container reveal">
         <div class="banner-centered-content">
             <span class="banner-badge">
-                <i class="fa-solid fa-crown"></i> Bespoke Interior Services
+                <i class="fa-solid fa-crown"></i> Premium Interior Services
             </span>
             <h1 class="banner-title-center">Our Tailored Services</h1>
             <p class="banner-subtitle-center">
@@ -39,7 +39,7 @@ include 'header.php';
         <div class="services-showcase-container">
 
             <!-- ==========================================
-                 Service 01: Bespoke Curtains (Left Video | Right Content)
+                 Service 01: Curtain Designing (Left Video | Right Content)
                  ========================================== -->
             <div class="service-editorial-row reveal">
                 <!-- Left: Video Showcase -->
@@ -57,15 +57,15 @@ include 'header.php';
                 <div class="service-content-wrapper">
                     <span class="service-bg-num">01</span>
                     <span class="service-meta-tag">Window Architecture</span>
-                    <h3 class="service-title-editorial">Bespoke Curtains & Haute Drapery</h3>
+                    <h3 class="service-title-editorial">Curtain Designing & Haute Drapery</h3>
                     <p class="service-lead-text">
-                        Handcrafted draperies tailored to exact room heights and light conditions. Sourced from high-thread-count Belgian linens, rich velvets, jacquards, and premium blackout sheers that sculpt light with graceful fluidity.
+                        Handcrafted draperies tailored to exact room heights and light conditions. Sourced from high-thread-count linens, rich velvets, jacquards, and premium blackout sheers that sculpt light with graceful fluidity.
                     </p>
 
                     <div class="service-specs-grid">
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-check"></i></div>
-                            <span class="service-spec-text">Italian Wave & Pinch Pleats</span>
+                            <span class="service-spec-text">S-fold, Pinch Pleats & Eyelet</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-moon"></i></div>
@@ -73,11 +73,11 @@ include 'header.php';
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-bolt"></i></div>
-                            <span class="service-spec-text">Somfy & Tuya Smart Tracks</span>
+                            <span class="service-spec-text">Candela & slide Smart Tracks</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-house-chimney"></i></div>
-                            <span class="service-spec-text">In-Home Swatch Matching</span>
+                            <span class="service-spec-text">In-House Stitching</span>
                         </div>
                     </div>
 
@@ -111,9 +111,9 @@ include 'header.php';
                 <div class="service-content-wrapper">
                     <span class="service-bg-num">02</span>
                     <span class="service-meta-tag">Smart Automation</span>
-                    <h3 class="service-title-editorial">Motorized & Architectural Blinds</h3>
+                    <h3 class="service-title-editorial">Blinds</h3>
                     <p class="service-lead-text">
-                        Architectural light control engineered for modern villas, duplexes, and corporate residences. Whisper-quiet Somfy motorization with app controls and zero-light-gap side channels.
+                        Architectural light control engineered for modern villas, duplexes, and corporate residences. Whisper-quiet Candela motorization with app controls and zero-light-gap side channels.
                     </p>
 
                     <div class="service-specs-grid">
@@ -167,7 +167,7 @@ include 'header.php';
                     <span class="service-meta-tag">Haute Upholstery</span>
                     <h3 class="service-title-editorial">Sofa Upholstery & Fine Fabrics</h3>
                     <p class="service-lead-text">
-                        Revitalize your living room suites with high-GSM upholstery weaves, premium velvets, Italian leatherettes, and bespoke tailored cushion piping built for enduring tactile elegance.
+                        Revitalize your living room suites with high-GSM upholstery weaves, premium velvets, Italian leatherettes, and custom tailored cushion piping built for enduring tactile elegance.
                     </p>
 
                     <div class="service-specs-grid">
@@ -219,7 +219,7 @@ include 'header.php';
                 <div class="service-content-wrapper">
                     <span class="service-bg-num">04</span>
                     <span class="service-meta-tag">Artisan Wall Murals</span>
-                    <h3 class="service-title-editorial">Imported European Wallpapers</h3>
+                    <h3 class="service-title-editorial">Imported Wallpapers</h3>
                     <p class="service-lead-text">
                         Transform accent walls into sculptural focal points with 3D embossed vinyl textures, metallic gold foils, and custom-scaled architectural murals curated from Italian and German design houses.
                     </p>
@@ -227,20 +227,20 @@ include 'header.php';
                     <div class="service-specs-grid">
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-scroll"></i></div>
-                            <span class="service-spec-text">Seamless Vinyl & Non-Woven Rolls</span>
+                            <span class="service-spec-text">Seamless Vinyl & Non-Woven Paper</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-soap"></i></div>
-                            <span class="service-spec-text">Moisture-Resistant & Washable</span>
+                            <span class="service-spec-text">Customised Tropical Wallpaper</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-palette"></i></div>
-                            <span class="service-spec-text">Custom Architectural Murals</span>
+                            <span class="service-spec-text">Professional Installation</span>
                         </div>
-                        <div class="service-spec-item">
+                        <!-- <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-brush"></i></div>
-                            <span class="service-spec-text">Dust-Free Professional Pasting</span>
-                        </div>
+                            <span class="service-spec-text">Professional Installation</span>
+                        </div> -->
                     </div>
 
                     <div class="service-cta-strip">
@@ -255,14 +255,12 @@ include 'header.php';
             </div>
 
             <!-- ==========================================
-                 Service 05: Mattresses (Left Video | Right Content)
+                 Service 05: Mattresses (Left Image | Right Content)
                  ========================================== -->
             <div class="service-editorial-row reveal">
-                <!-- Left: Video Showcase -->
+                <!-- Left: Visual Showcase -->
                 <div class="service-video-wrapper">
-                    <video class="service-showcase-video" autoplay muted loop playsinline preload="metadata">
-                        <source src="img/service video/matress.mp4" type="video/mp4">
-                    </video>
+                    <img src="img/service video/8b107df1aa057ee60ecdb62d20282fb7.jpg" alt="Orthopedic & Luxury Mattresses" class="service-showcase-img">
                     <span class="service-floating-badge">
                         <i class="fa-solid fa-bed"></i> 05 • Ergonomic Sleep
                     </span>
@@ -281,20 +279,20 @@ include 'header.php';
                     <div class="service-specs-grid">
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-ring"></i></div>
-                            <span class="service-spec-text">7-Zone Independent Pocket Springs</span>
+                            <span class="service-spec-text">7-Zone 100% Organic Natural Latex</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-leaf"></i></div>
-                            <span class="service-spec-text">100% Organic Natural Latex</span>
+                            <span class="service-spec-text">Memory foam mattress</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-wind"></i></div>
-                            <span class="service-spec-text">Cooling Bamboo Knitted Quilt</span>
+                            <span class="service-spec-text">Rebonded foam mattress</span>
                         </div>
-                        <div class="service-spec-item">
+                        <!-- <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-award"></i></div>
                             <span class="service-spec-text">10-Year Replacement Warranty</span>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="service-cta-strip">
@@ -326,28 +324,28 @@ include 'header.php';
                 <!-- Left: Content Narrative -->
                 <div class="service-content-wrapper">
                     <span class="service-bg-num">06</span>
-                    <span class="service-meta-tag">Artisan Weaving</span>
-                    <h3 class="service-title-editorial">Artisan Carpets & Luxury Rugs</h3>
+                    <span class="service-meta-tag">Flooring solutions</span>
+                    <h3 class="service-title-editorial">Premium Flooring</h3>
                     <p class="service-lead-text">
-                        Hand-tufted and knotted rugs crafted from pure New Zealand wool and pure silk to anchor living spaces with tactile warmth, acoustic softness, and heirloom beauty.
+                        Discover our exclusive collection of SPC wooden flooring, luxury vinyl planks (LVP), and engineered wooden floors—100% waterproof, scratch-resistant, and ideal for residential and commercial spaces.
                     </p>
 
                     <div class="service-specs-grid">
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-gem"></i></div>
-                            <span class="service-spec-text">Hand-Tufted Pure NZ Wool & Silk</span>
+                            <span class="service-spec-text">Wooden Flooring</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                            <span class="service-spec-text">Anti-Skid Cotton Canvas Backing</span>
+                            <span class="service-spec-text">PVC-vinyl Flooring</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-shapes"></i></div>
-                            <span class="service-spec-text">Custom Shapes, Sizes & Runners</span>
+                            <span class="service-spec-text">SPC Flooring</span>
                         </div>
                         <div class="service-spec-item">
                             <div class="service-spec-icon"><i class="fa-solid fa-droplet-slash"></i></div>
-                            <span class="service-spec-text">Stain-Resistant Scotchgard Shield</span>
+                            <span class="service-spec-text">Carpet Tiles</span>
                         </div>
                     </div>
 
@@ -368,7 +366,7 @@ include 'header.php';
 </section>
 
 <!-- ==========================================
-     How We Work — 4-Step Bespoke Craft Process
+     How We Work — 4-Step Craft Process
      ========================================== -->
 <section class="service-process-section">
     <div class="container">
@@ -419,7 +417,7 @@ include 'header.php';
             <div class="process-step-item reveal reveal-delay-3">
                 <div>
                     <div class="process-step-img-box">
-                        <img src="img/howwework/installation.jpg" alt="White-Glove Installation">
+                        <img src="img/howwework/installation.png" alt="White-Glove Installation">
                     </div>
                     <div class="process-step-num">04</div>
                     <h4 class="process-step-title">White-Glove Installation</h4>
